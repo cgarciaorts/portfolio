@@ -1,0 +1,50 @@
+ <div class="container sm:mx-16 md:mx-28 lg:mx-8">
+
+  <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-3 align-center mx-auto my-16 cursor-default lg:p-8 md:mx-2 lg:mx-4">
+ 
+ {{#each obtenerdeporte}}   
+
+ <div class="cmax-w-sm overflow-hidden shadow-lg mx-2 my-8 hover:scale-110 hover:bg-slate-200 text-black font-semibold py-3 px-6 rounded-md transition duration-500 ease-in-out transform hover:-translate-y-1">
+
+    <div class="w-full rounded text-justify ">
+        <img class="w-full" src="{{Imagen}}">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2 text-center">{{Nombre}}</div>
+            <p class="text-gray-600 text-base"> {{Descripcion}} </p>
+        </div>
+
+        <div class="py-4">
+
+          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#hazdeporte</span>
+          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#siemprefit</span>
+          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#cuidate</span>
+
+        </div>
+    </div>  
+      
+</div>
+{{/each}} 
+</div>
+
+{{!-- <div class="container grid grid-cols-3 gap-2 mx-auto">
+ {{#each obtenergraficaswellness}}
+
+    <div class="w-full rounded bg-slate-200 text-center">
+
+        <a href="/creargraficawellness">
+            <h1>Altura: {{Altura}} </h1> 
+            <h1>Peso: {{Peso}} </h1> 
+            <h1>Edad: {{Edad}} </h1>
+            <h1>Horas de sueño: {{Horas}} </h1> 
+            <h1>Calidad del sueño: {{Calidad}} </h1> 
+            <h1>Cansancio: {{Cansancio}}</h1>
+            <h1>Estrés: {{Estres}}</h1>
+            <h1>Tiempo de ejercicio: {{Ejercicio}} </h1> 
+
+            <h1>Dia de la semana: {{Fecha}} </h1>         
+        </a>
+            <br><br>
+    </div>    
+{{/each}}
+
+</div> --}}

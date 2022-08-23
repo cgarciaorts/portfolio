@@ -1,0 +1,43 @@
+se configura con 
+npm install express-session passport passport-google-oauth2
+
+npm install nodemon -D
+
+npm install dotenv
+
+
+
+te vas a passportjs
+buscas google-oauth2
+
+
+despues pones google cloud platform
+
+correo cgarciaorts
+
+credenciales y descargar las dos las pones en env asi
+GOOGLE_CLIENT_ID=41460432357-duu9fka6p16eg5kri40fk1lu35phclr1.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
+
+y en auth
+
+callbackURL cambias your domain por localhost
+const passport = require('passport')
+
+var GoogleStrategy = require( 'passport-google-oauth2' ).Strategy;
+
+passport.use(new GoogleStrategy({
+    clientID:     GOOGLE_CLIENT_ID,
+    clientSecret: GOOGLE_CLIENT_SECRET,
+    callbackURL: "http://localhost:3000/auth/google/callback",
+    passReqToCallback   : true
+  },
+  function(request, accessToken, refreshToken, profile, done) {
+    User.findOrCreate({ googleId: profile.id }, function (err, user) {
+      return done(err, user);
+    });
+  }
+));
+
+
+mirar registro-google
