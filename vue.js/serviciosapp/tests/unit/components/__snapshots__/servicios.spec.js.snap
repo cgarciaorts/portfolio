@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Servicios Component Debe hacer match con el snapshot 1`] = `
+<section id="padre"><img id="animacion" src="https://media.baamboozle.com/uploads/images/41563/1600663080_846368" alt="">
+  <section id="caja-servicios">
+    <h1>Servicios</h1>
+    <ul id="lista">
+      <li class="">Desarrollo Web <span>300</span>€</li>
+      <li class="">Diseño Web <span>400</span>€</li>
+      <li class="">Integración <span>250</span>€</li>
+      <li class="">Clases particulares <span>220</span>€</li>
+    </ul>
+    <div id="total">
+      <h3>Total <span>0</span></h3>
+    </div>
+  </section>
+</section>
+`;
